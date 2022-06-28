@@ -6,7 +6,9 @@ import Vant from 'vant'
 // import 'vant/lib/index.css'
 import 'vant/lib/index.less'
 import 'amfe-flexible'
-import '@/style/icon.less'
+// import '@/style/icon.less'
+// import '@/style/reset.less'
+import '@/style/index.less'
 Vue.config.productionTip = false
 Vue.use(Vant)
 new Vue({

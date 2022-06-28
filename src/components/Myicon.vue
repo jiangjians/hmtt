@@ -1,13 +1,19 @@
 <template>
-  <div>
-  </div>
+  <i class="toutiao" :class="'toutiao-' + name"></i>
 </template>
 
 <script>
 export default {
+  props: {
+    name: {
+      type: String,
+      required: true
+    }
+  },
   created () { },
   data () {
-    return {}
+    return {
+    }
   },
   methods: {},
   computed: {},
@@ -17,6 +23,5 @@ export default {
 }
 </script>
 
-<style scoped lang='less'>
-
+<style scoped>
 </style>
