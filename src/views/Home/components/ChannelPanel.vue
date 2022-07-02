@@ -111,7 +111,8 @@ export default {
             arr.push({ id: item.id, seq: index })
           })
           try {
-            await saveChannels(arr)
+            const res = await saveChannels(arr)
+            console.log(res)
           } catch (error) {
             console.log(error)
           }
