@@ -70,7 +70,6 @@ export default {
       }
       try {
         const res = await getArticleList({ channel_id: this.id, timestamp: this.timestamp })
-        console.log(res)
         this.timestamp = res.data.data.pre_timestamp
         if (this.timestamp === null) {
           this.finished = true

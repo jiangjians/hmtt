@@ -11,9 +11,11 @@ import 'amfe-flexible'
 import '@/style/index.less'
 
 import * as obj from '@/filters'
+import '@/components'
 Object.keys(obj).forEach(key => {
   Vue.filter(key, obj[key])
 })
+
 Vue.config.productionTip = false
 Vue.use(Vant)
 new Vue({

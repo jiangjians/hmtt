@@ -71,7 +71,6 @@ export default {
         try {
           const res = await getMyChannels()
           this.ChannelsList = res.data.data.channels
-          console.log(res)
         } catch (error) {
           console.log(error)
         }

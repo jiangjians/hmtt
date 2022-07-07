@@ -8,6 +8,7 @@ const Question = () => import('@/views/Question')
 const My = () => import('@/views/My')
 const Login = () => import('@/views/Login')
 const Search = () => import('@/views/Search')
+const Article = () => import('@/views/Article')
 const routes = [
   {
     path: '/',
@@ -25,6 +26,9 @@ const routes = [
   },
   {
     path: '/search', component: Search
+  },
+  {
+    path: '/article/:article_id', component: Article, name: 'article', props: true// paramsz组件相关的路由加props:true可以让路由和组件解耦
   }
 ]
 
